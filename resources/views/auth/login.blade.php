@@ -1,48 +1,68 @@
-<x-guest-layout>
-    <x-jet-authentication-card>
-        <x-slot name="logo">
-            <x-jet-authentication-card-logo />
-        </x-slot>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
 
-        <x-jet-validation-errors class="mb-4" />
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="{{asset('log/fonts/material-icon/css/material-design-iconic-font.min.css')}}">
 
-        @if (session('status'))
-            <div class="mb-4 font-medium text-sm text-green-600">
-                {{ session('status') }}
+    <!-- Main css -->
+    <link rel="stylesheet" href="{{asset('log/css/style.css')}}">
+</head>
+<body>
+
+    <div class="main">
+        <!-- Sing in  Form -->
+        <section class="sign-in">
+            <div class="container">
+                <div class="signin-content">
+                    <div class="signin-image">
+                        <figure><img src=" {{asset('log/images/signin-image.jpg')}}" alt="sing up image"></figure>
+                        <div class="text-center">
+                            <p class="mt-15 mb-0 text-black">Don't have an account? <a href="{{route("register")}}" class="text-info center-ml-5">Register</a></p>
+                        </div>
+                    </div>
+
+                    <div class="signin-form">
+                        <h2 class="form-title">Log In</h2>
+                        <form method="POST" action="{{route('login') }}" class="register-form" id="login-form">
+                            @csrf
+                            <div class="form-group">
+                                <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="email" id="email" name="email" class="form-control pl-15 bg-transparent text-white plc-white" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" id="password" name="password" class="form-control pl-15 bg-transparent text-white plc-white" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" id="remember_me" name="remember">
+                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
+                            </div>
+                        </form>
+                        <div class="social-login">
+                            <span class="social-label">Or login with</span>
+                            <ul class="socials">
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        @endif
+        </section>
 
-        <form method="POST" action="{{ route('login') }}">
-            @csrf
-
-            <div>
-                <x-jet-label for="email" value="{{ __('Email') }}" />
-                <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
-            </div>
-
-            <div class="mt-4">
-                <x-jet-label for="password" value="{{ __('Password') }}" />
-                <x-jet-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="current-password" />
-            </div>
-
-            <div class="block mt-4">
-                <label for="remember_me" class="flex items-center">
-                    <x-jet-checkbox id="remember_me" name="remember" />
-                    <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-                </label>
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
-                        {{ __('Forgot your password?') }}
-                    </a>
-                @endif
-
-                <x-jet-button class="ml-4">
-                    {{ __('Log in') }}
-                </x-jet-button>
-            </div>
-        </form>
-    </x-jet-authentication-card>
-</x-guest-layout>
+    </div>
+   
+    <!-- JS -->
+    <script src="{{asset('log/vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('log/js/main.js')}}"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
