@@ -7,7 +7,7 @@
 
 					<!-- Logo desktop -->
 					<a href="#" class="logo">
-						<img src="{{ asset('backend/images/logo-wo.png') }}" alt="IMG-LOGO">
+						<img src="{{ asset('backend/images/logo-wo1.png') }}" alt="IMG-LOGO">
 					</a>
 
 					<!-- Menu desktop -->
