@@ -22,11 +22,11 @@
 								</ul>
 							</li>
 
-							<li>
+							<li class="label1" data-label1="Hot">
 								<a href="product.html">Shop</a>
 							</li>
 
-							<li class="label1" data-label1="hot">
+							<li class="label1" data-label1="Hot Item!">
 								<a href="shoping-cart.html">Features</a>
 							</li>
 
@@ -39,7 +39,7 @@
 							</li>
 
 							<li>
-								<a href="contact.html">Contact</a>
+								<a href="contact.html">Contact</a> 
 							</li>
 						</ul>
 					</div>
