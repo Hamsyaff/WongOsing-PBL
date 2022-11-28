@@ -325,16 +325,8 @@
                       Dress
                   </button>
 
-                  <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".bag">
-                      Bag
-                  </button>
-
-                  <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".shoes">
-                      Shoes
-                  </button>
-
-                  <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".watches">
-                      Watches
+                  <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".Sirup">
+                      Syrup
                   </button>
               </div>
 
@@ -586,11 +578,11 @@
                   </div>
               </div>
 
-              <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item Snack">
+              <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item Sirup">
                   <!-- Block2 -->
                   <div class="block2">
                       <div class="block2-pic hov-img0">
-                          <img src="{{ asset('backend/images/WO/product-02.jpg') }}" alt="IMG-PRODUCT">
+                          <img src="{{ asset('backend/images/WO/sirup-01.jpg') }}" alt="IMG-PRODUCT">
 
                           <a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
                               Quick View
@@ -714,11 +706,11 @@
                   </div>
               </div>
 
-              <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item Snack">
+              <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item Sirup">
                   <!-- Block2 -->
                   <div class="block2">
                       <div class="block2-pic hov-img0">
-                          <img src="{{ asset('backend/images/WO/product-06.jpg') }}" alt="IMG-PRODUCT">
+                          <img src="{{ asset('backend/images/WO/sirup-02.jpg') }}" alt="IMG-PRODUCT">
 
                           <a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
                               Quick View
@@ -970,11 +962,11 @@
                   </div>
               </div>
 
-              <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item Dress">
+              <div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item Sirup">
                   <!-- Block2 -->
                   <div class="block2">
                       <div class="block2-pic hov-img0">
-                          <img src="{{ asset('backend/images/WO/kaos-06.jpg') }}" alt="IMG-PRODUCT">
+                          <img src="{{ asset('backend/images/WO/sirup-03.jpg') }}" alt="IMG-PRODUCT">
 
                           <a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
                               Quick View
@@ -1065,17 +1057,6 @@
                       </div>
                   </div>
               </div>
-          </div>
-
-          <!-- Pagination -->
-          <div class="flex-c-m flex-w w-full p-t-38">
-              <a href="#" class="flex-c-m how-pagination1 trans-04 m-all-7 active-pagination1">
-                  1
-              </a>
-
-              <a href="#" class="flex-c-m how-pagination1 trans-04 m-all-7">
-                  2
-              </a>
           </div>
       </div>
   </section>
