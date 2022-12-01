@@ -47,7 +47,9 @@
                         </div>
                         <div class="signup-image">
                             <figure><img src="{{asset('backend/images/LogoWO.png')}}" alt="sing up image"></figure>
-                            <a href="{{route('admin.logout')}}" class="signup-image-link">Sudah punya akun</a> 
+                            <div class="text-center">
+                                <p class="mt-15 mb-0 text-black">Sudah punya akun? Silahkan <a href="{{route("admin.logout")}}" class="text-info center-ml-5">Login</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
