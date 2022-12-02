@@ -58,7 +58,7 @@
 
 	            <div class="sidebar-gallery w-full p-tb-30">
 	                <span class="mtext-101 cl5">
-	                    @ CozaStore
+	                    @ Wong Oseng
 	                </span>
 
 	                <div class="flex-w flex-sb p-t-36 gallery-lb">

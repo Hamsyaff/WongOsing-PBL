@@ -20,9 +20,9 @@
             <div class="container">
                 <div class="signin-content">
                     <div class="signin-image">
-                        <figure><img src=" {{asset('log/images/signin-image.jpg')}}" alt="sing up image"></figure>
+                        <figure><img src=" {{asset('backend/images/LogoWO.png')}}" alt="sing up image"></figure>
                         <div class="text-center">
-                            <p class="mt-15 mb-0 text-black">Don't have an account? <a href="{{route("register")}}" class="text-info center-ml-5">Register</a></p>
+                            <p class="mt-15 mb-0 text-black">Belum punya akun? <a href="{{route("register")}}" class="text-info center-ml-5">Register</a></p>
                         </div>
                     </div>
 
@@ -38,22 +38,10 @@
                                 <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
                                 <input type="password" id="password" name="password" class="form-control pl-15 bg-transparent text-white plc-white" placeholder="Password">
                             </div>
-                            <div class="form-group">
-                                <input type="checkbox" id="remember_me" name="remember">
-                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
-                            </div>
                             <div class="form-group form-button">
                                 <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
                             </div>
                         </form>
-                        <div class="social-login">
-                            <span class="social-label">Or login with</span>
-                            <ul class="socials">
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
