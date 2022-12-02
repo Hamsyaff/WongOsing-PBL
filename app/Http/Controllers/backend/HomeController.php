@@ -11,4 +11,9 @@ class HomeController extends Controller
     {
         return view('admin.index');
     }
+
+    public function Shopcart()
+    {
+        return view('admin.backend.shoping-cart');
+    }
 }

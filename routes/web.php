@@ -34,4 +34,5 @@ Route::get('/Logout/logout', [LogoutController::class, 'logout'])->name('admin.l
 // All Route User
 Route::prefix('homes')->group(function () {
     Route::get('/view', [HomeController::class, 'HomeView'])->name('admin.index');
+    Route::get('/shop', [HomeController::class, 'ShopCart'])->name('admin.backend.shoping-cart');
 });

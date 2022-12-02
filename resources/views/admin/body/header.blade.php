@@ -22,12 +22,12 @@
 							</li>
 
 							<li class="label1" data-label1="Hot Item!">
-								<a href="shoping-cart.html">Features</a>
+								<a href="{{ route('admin.backend.shoping-cart') }}">Features</a>
 							</li>
 
-							<li>
+							<!-- <li>
 								<a href="blog.html">Blog</a>
-							</li>
+							</li> -->
 
 							<li>
 								<a href="about.html">About</a>
