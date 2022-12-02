@@ -91,7 +91,7 @@
   <section class="section-slide">
       <div class="wrap-slick1 rs2-slick1">
           <div class="slick1">
-              <div class="item-slick1 bg-overlay1" style="background-image: url(backend/images/slide-05.jpg);" data-thumb="{{ asset('backend/images/thumb-01.jpg') }}" data-caption="Women’s Wear">
+              <div class="item-slick1 bg-overlay1" style="{{ ('background-image: url()') }}" data-thumb="{{ asset('backend/images/thumb-01.jpg') }}" data-caption="Women’s Wear">
                   <div class="container h-full">
                       <div class="flex-col-c-m h-full p-t-100 p-b-60 respon5">
                           <div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
