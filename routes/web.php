@@ -31,4 +31,4 @@ Route::middleware([
 
 Route::get('/Logout/logout', [LogoutController::class, 'logout'])->name('admin.logout');
 
-Route::get('/view', [CheckoutController::class, 'CheckoutView'])->name('admin.backend.checkout');
+Route::get('/view', [CheckoutController::class, 'CheckoutView'])->name('checkout.view');
