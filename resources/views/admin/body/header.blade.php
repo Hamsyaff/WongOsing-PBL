@@ -14,7 +14,7 @@
 					<div class="menu-desktop">
 						<ul class="main-menu">
 							<li>
-								<a href="{{ route('admin.index') }}">Home</a>
+								<a href="dashboard">Home</a>
 							</li>
 
 							<li class="label1" data-label1="Hot">

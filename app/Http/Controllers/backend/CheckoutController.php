@@ -11,4 +11,9 @@ class CheckoutController extends Controller
     {
         return view('admin.backend.checkout');
     }
+
+    public function Shopcart()
+    {
+        return view('admin.backend.shoping-cart');
+    }
 }
