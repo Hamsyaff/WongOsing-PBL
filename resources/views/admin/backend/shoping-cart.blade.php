@@ -1,4 +1,4 @@
-@extends('admin.admin_master')
+{{-- @extends('admin.admin_master')
 @section('admin')
 
 @include('admin.body.header')
@@ -274,4 +274,4 @@
 </form>
 
 @include('admin.body.footer')
-@section('admin')
+@section('admin') --}}
