@@ -22,7 +22,7 @@
 							</li>
 
 							<li class="label1" data-label1="Hot Item!">
-								<a href="{{ route('admin.backend.shoping-cart') }}">Features</a>
+								{{-- <a href="{{ route('admin.backend.shoping-cart') }}">Features</a> --}}
 							</li>
 
 							<!-- <li>

@@ -31,13 +31,4 @@ Route::middleware([
 
 Route::get('/Logout/logout', [LogoutController::class, 'logout'])->name('admin.logout');
 
-// All Route User
-
-Route::prefix('home')->group(function () {
-
-    Route::get('/shop', [CheckoutController::class, 'Shopcart'])->name('admin.backend.shoping-cart');
-    // Route::post('/store', [UserController::class, 'UserStore'])->name('users.store');
-    Route::get('/checkout', [CheckoutController::class, 'CheckoutView'])->name('admin.backend.checkout');
-    // Route::post('/update/{id}', [UserController::class, 'UserUpdate'])->name('users.update');
-    // Route::get('/delete/{id}', [UserController::class, 'UserDelete'])->name('users.delete');
-});
+Route::get('/view', [CheckoutController::class, 'CheckoutView'])->name('admin.backend.checkout');
