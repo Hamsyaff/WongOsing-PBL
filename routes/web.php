@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\backend\CheckoutController;
 use App\Http\Controllers\backend\HomeController;
 use App\Http\Controllers\backend\LogoutController;
 use Illuminate\Support\Facades\Route;
