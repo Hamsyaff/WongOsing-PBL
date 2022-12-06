@@ -212,7 +212,9 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 .header-v3 .container-menu-desktop {
-  height: auto;
+  height: 0pc;
+  padding: 1px;
+  
 }
 
 .header-v4 .container-menu-desktop {
@@ -291,7 +293,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 .header-v3 .wrap-menu-desktop {
   background-color: transparent;
   top: 0;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 0pc  rgba(255,255,255,0.1);
 }
 
 .header-v4 .wrap-menu-desktop {
