@@ -133,7 +133,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 .loader05 {
   width: 225px;
   height: 225px;
-  background-image: url('../images/LogoWO.png');
+  /* background-image: url('../images/LogoWO.png'); */
   position: relative;
   animation: loader-scale 1s ease-out infinite;
   top: 50%;
