@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\API\Admin\penjualanController;
 use App\Http\Controllers\API\Auth\AuthController;
+use App\Http\Controllers\API\Cust\customersController;
 use App\Http\Controllers\API\Type\kategoriController;
 use App\Http\Controllers\API\User\pembelianController;
 use Illuminate\Http\Request;
@@ -38,3 +39,7 @@ Route::post('pembelian/add', [pembelianController::class, 'add']);
 //kategori
 Route::get('/kategori', [kategoriController::class, 'index']);
 Route::post('kategori/add', [kategoriController::class, 'add']);
+
+//customers
+Route::get('/customer', [customersController::class, 'index']);
+Route::post('customer/add', [customersController::class, 'add']);
