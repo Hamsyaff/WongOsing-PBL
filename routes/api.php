@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\WO\kategoriController;
+use App\Http\Controllers\WO\pembelianController;
 use App\Http\Controllers\WO\produkController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -31,3 +32,6 @@ Route::post('kategori/add',[kategoriController::class, 'add']);
 
 Route::get('produk',[produkController::class, 'index']);
 Route::post('produk/add',[produkController::class, 'add']);
+
+Route::get('pembelian',[pembelianController::class, 'index']);
+Route::post('pembelian/add',[pembelianController::class, 'add']);
