@@ -3,6 +3,7 @@
 use App\Http\Controllers\API\Admin\penjualanController;
 use App\Http\Controllers\API\Auth\AuthController;
 use App\Http\Controllers\API\Cust\customersController;
+use App\Http\Controllers\API\Produk\produkController;
 use App\Http\Controllers\API\Type\kategoriController;
 use App\Http\Controllers\API\User\pembelianController;
 use Illuminate\Http\Request;
@@ -43,3 +44,7 @@ Route::post('kategori/add', [kategoriController::class, 'add']);
 //customers
 Route::get('/customer', [customersController::class, 'index']);
 Route::post('customer/add', [customersController::class, 'add']);
+
+//produk
+Route::get('/produk', [produkController::class, 'index']);
+Route::post('produk/add', [produkController::class, 'add']);
