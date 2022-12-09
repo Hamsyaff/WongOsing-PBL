@@ -18,11 +18,10 @@ class kategoriController extends Controller
     {
         $validateData = $request->validate([
             'ID_Kategori' => 'required',
-            'Nama_kategori' => 'required',
+            'Nama_Kategori' => 'required',
             'Des_Kategori' => 'required',
         ]);
 
-        // create user
         $kategori = new kategori([
             'ID_Kategori' =>  $request->ID_Kategori,
             'Nama_Kategori' =>  $request->Nama_Kategori,

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\WO\kategoriController;
+use App\Http\Controllers\WO\produkController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -25,5 +26,8 @@ Route::post('register', [AuthController::class, 'register']);
 Route::post('login',[AuthController::class, 'login']);
 
 //CRUD
-Route::get('mobil',[kategoriController::class, 'index']);
-Route::post('mobil/add',[kategoriController::class, 'add']);
+Route::get('kategori',[kategoriController::class, 'index']);
+Route::post('kategori/add',[kategoriController::class, 'add']);
+
+Route::get('produk',[produkController::class, 'index']);
+Route::post('produk/add',[produkController::class, 'add']);
