@@ -17,22 +17,22 @@ class produkController extends Controller
     public function add(Request $request)
     {
         $validateData = $request->validate([
-            'ID_Produk' => 'required',
-            'Nama_Produk' => 'required',
-            'ID_Kategori' => 'required',
-            'Harga_Jual_Produk' => 'required',
-            'Harga_Beli_Produk' => 'required',
-            'Stok_Barang' => 'required',
+            'id_produk' => 'required',
+            'nama_produk' => 'required',
+            'id_kategori' => 'required',
+            'harga_jual_produk' => 'required',
+            'harga_beli_produk' => 'required',
+            'stok_barang' => 'required',
         ]);
 
 
         $produk = new Produk([
-            'ID_Produk' =>  $request->ID_Produk,
-            'Nama_Produk' =>  $request->Nama_Produk,
-            'ID_Kategori' =>  $request->ID_Kategori,
-            'Harga_Jual_Produk' =>  $request->Harga_Jual_Produk,
-            'Harga_Beli_Produk' =>  $request->Harga_Beli_Produk,
-            'Stok_Barang' =>  $request->Stok_Barang,
+            'id_produk' =>  $request->id_produk,
+            'nama_produk' =>  $request->nama_produk,
+            'id_kategori' =>  $request->id_kategori,
+            'harga_jual_produk' =>  $request->harga_jual_produk,
+            'harga_beli_produk' =>  $request->harga_beli_produk,
+            'stok_barang' =>  $request->stok_barang,
 
         ]);
 
