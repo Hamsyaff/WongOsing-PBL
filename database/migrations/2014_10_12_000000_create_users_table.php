@@ -22,7 +22,8 @@ return new class extends Migration
             $table->rememberToken();
             $table->foreignId('current_team_id')->nullable();
             $table->string('profile_photo_path', 2048)->nullable();
-            $table->timestamps();
+            $table->tinyInteger('type')->default(0); /* Users: 0=>Member, 1=>Super Admin */
+            $table->timestamps(); // created_at dan updated_at
         });
     }
 

@@ -18,7 +18,7 @@
                         </li>
 
                         <li class="label1" data-label1="Hot">
-                            <a href="product.html">Shop</a>
+                            <a href="{{route('product.view')}}">Shop</a>
                         </li>
 
                         <li class="label1" data-label1="Hot Item!">
@@ -42,8 +42,8 @@
                 <!-- Icon header -->
                 <div class="wrap-icon-header flex-w flex-r-m h-full">
                     <div class="flex-c-m h-full p-r-25 bor6">
-                        <div class="icon-header-item cl0 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart" data-notify="2">
-                            <i class="zmdi zmdi-shopping-cart"></i>
+                        <div class="icon-header-item cl0 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart" data-notify="10">
+                            <i class="zmdi zmdi-shopping-cart" src="{{ asset('backend/images/icons/shopping.cart.png') }}"  ></i>
                         </div>
                     </div>
 
