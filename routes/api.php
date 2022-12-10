@@ -33,5 +33,8 @@ Route::post('kategori/add',[kategoriController::class, 'add']);
 Route::get('produk',[produkController::class, 'index']);
 Route::post('produk/add',[produkController::class, 'add']);
 
+//Transaksi Pembelian
 Route::get('pembelian',[pembelianController::class, 'index']);
 Route::post('pembelian/add',[pembelianController::class, 'add']);
+Route::post('pembelian/update',[pembelianController::class, 'update']);
+Route::post('pembelian/destroy',[pembelianController::class, 'destroy']);
