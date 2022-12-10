@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\backend\adminController;
 use App\Http\Controllers\backend\CheckoutController;
 use App\Http\Controllers\backend\LogoutController;
 use App\Http\Controllers\backend\ProductController;
@@ -34,3 +35,5 @@ Route::get('/Logout/logout', [LogoutController::class, 'logout'])->name('admin.l
 
 Route::get('/view', [CheckoutController::class, 'CheckoutView'])->name('checkout.view');
 Route::get('/shop', [ProductController::class, 'ProductView'])->name('product.view');
+Route::get('/about', [adminController::class, 'AboutView'])->name('about.view');
+Route::get('/contact', [adminController::class, 'ContactView'])->name('contact.view');

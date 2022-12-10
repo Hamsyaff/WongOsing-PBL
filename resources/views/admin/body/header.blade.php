@@ -10,20 +10,20 @@
                 </div>
 
                 <div class="right-top-bar flex-w h-full">
-                    <a href="#" class="flex-c-m trans-04 p-lr-25">
+                    <a href="{{route('contact.view')}}" class="flex-c-m trans-04 p-lr-25">
                         Help & FAQs
                     </a>
 
-                    <a href="#" class="flex-c-m trans-04 p-lr-25">
+                    <a href="{{route('about.view')}}" class="flex-c-m trans-04 p-lr-25">
                         My Account
                     </a>
 
-                    <a href="#" class="flex-c-m trans-04 p-lr-25">
+                    <a href="https://www.google.com/search?q=terjemahan&rlz=1C1ONGR_enID1023ID1023&oq=terj&aqs=chrome.0.69i59i131i433i512j69i59j0i131i433i512j0i512j0i131i433i512l3j0i433i512j0i131i433i512j0i433i512.2357j0j9&sourceid=chrome&ie=UTF-8" class="flex-c-m trans-04 p-lr-25">
                         EN
                     </a>
 
                     <a href="#" class="flex-c-m trans-04 p-lr-25">
-                        USD
+                        IND
                     </a>
                 </div>
             </div>
@@ -49,19 +49,14 @@
                         </li>
 
                         <li class="label1" data-label1="hot">
-                            <a href="shoping-cart.html">Features</a>
+                            <a href="{{route('checkout.view')}}">Features</a>
+                        </li>
+                        <li>
+                            <a href="{{route('about.view')}}">About</a>
                         </li>
 
                         <li>
-                            <a href="blog.html">Blog</a>
-                        </li>
-
-                        <li>
-                            <a href="about.html">About</a>
-                        </li>
-
-                        <li>
-                            <a href="contact.html">Contact</a>
+                            <a href="{{route('contact.view')}}">Contact</a>
                         </li>
                     </ul>
                 </div>	

@@ -2,23 +2,14 @@
 <div class="menu-mobile">
     <ul class="main-menu-m">
         <li>
-            <a href="dashboard">Home</a>
+            <a href="{{route('about.view')}}">My Account</a>
         </li>
 
         <li>
             <a href="{{route('product.view')}}">Shop</a>
         </li>
-
         <li>
-            <a href="shoping-cart.html" class="label1 rs1" data-label1="hot">Features</a>
-        </li>
-
-        <li>
-            <a href="blog.html">Blog</a>
-        </li>
-
-        <li>
-            <a href="about.html">About</a>
+            <a href="{{route('about.view')}}">About</a>
         </li>
 
         <li>
