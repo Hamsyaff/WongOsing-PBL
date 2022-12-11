@@ -40,6 +40,10 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+<<<<<<< HEAD
+=======
+        
+>>>>>>> a0160971ad3349c8e9cfe85bfce350e0b0d283b8
         'api' => [
             'driver' => 'passport',
             'provider' => 'users',

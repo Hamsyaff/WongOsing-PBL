@@ -133,13 +133,16 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 .loader05 {
   width: 225px;
   height: 225px;
-  background-image: url('../images/LogoWO.png');
+  /* background-image: url('../images/LogoWO.png'); */
   position: relative;
   animation: loader-scale 1s ease-out infinite;
   top: 50%;
   margin: -28px auto 0 auto; 
+<<<<<<< HEAD
   
 
+=======
+>>>>>>> a0160971ad3349c8e9cfe85bfce350e0b0d283b8
 }
 
 @keyframes loader-scale {
@@ -214,8 +217,14 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 .header-v3 .container-menu-desktop {
+<<<<<<< HEAD
   height: auto;
   /* height: 84px; */
+=======
+  height: 0pc;
+  padding: 1px;
+  
+>>>>>>> a0160971ad3349c8e9cfe85bfce350e0b0d283b8
 }
 
 .header-v4 .container-menu-desktop {
@@ -294,7 +303,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 .header-v3 .wrap-menu-desktop {
   background-color: transparent;
   top: 0;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 0pc  rgba(255,255,255,0.1);
 }
 
 .header-v4 .wrap-menu-desktop {
@@ -735,7 +744,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 .main-menu-m {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #717fe0;
+  background-color: #000000;
 }
 
 .main-menu-m > li > a {

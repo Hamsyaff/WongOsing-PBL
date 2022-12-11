@@ -76,7 +76,7 @@
                           View Cart
                       </a>
 
-                      <a href="{{route('admin.backend.checkout')}}" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
+                      <a href="{{route('checkout.view')}}" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
                           Check Out
                       </a>
                   </div>
