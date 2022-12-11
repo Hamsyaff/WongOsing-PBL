@@ -1,18 +1,11 @@
 <?php
 
-<<<<<<< HEAD
 use App\Http\Controllers\API\Admin\penjualanController;
 use App\Http\Controllers\API\Auth\AuthController;
 use App\Http\Controllers\API\Cust\customersController;
 use App\Http\Controllers\API\Produk\produkController;
 use App\Http\Controllers\API\Type\kategoriController;
 use App\Http\Controllers\API\User\pembelianController;
-=======
-use App\Http\Controllers\API\AuthController;
-use App\Http\Controllers\WO\kategoriController;
-use App\Http\Controllers\WO\pembelianController;
-use App\Http\Controllers\WO\produkController;
->>>>>>> a0160971ad3349c8e9cfe85bfce350e0b0d283b8
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -31,7 +24,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-<<<<<<< HEAD
 // Route::post('register', 'API\Auth\AuthController@register');
 // Route::post('login', 'API\Auth\AuthController@login');
 Route::post('/register', [AuthController::class, 'register']);
@@ -56,7 +48,7 @@ Route::post('customer/add', [customersController::class, 'add']);
 //produk
 Route::get('/produk', [produkController::class, 'index']);
 Route::post('produk/add', [produkController::class, 'add']);
-=======
+
 //API
 Route::post('register', [AuthController::class, 'register']);
 Route::post('login',[AuthController::class, 'login']);
@@ -73,4 +65,3 @@ Route::get('pembelian',[pembelianController::class, 'index']);
 Route::post('pembelian/add',[pembelianController::class, 'add']);
 Route::post('pembelian/update',[pembelianController::class, 'update']);
 Route::post('pembelian/destroy',[pembelianController::class, 'destroy']);
->>>>>>> a0160971ad3349c8e9cfe85bfce350e0b0d283b8

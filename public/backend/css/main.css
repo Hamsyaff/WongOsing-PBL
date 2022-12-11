@@ -138,11 +138,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   animation: loader-scale 1s ease-out infinite;
   top: 50%;
   margin: -28px auto 0 auto; 
-<<<<<<< HEAD
-  
 
-=======
->>>>>>> a0160971ad3349c8e9cfe85bfce350e0b0d283b8
 }
 
 @keyframes loader-scale {
@@ -217,14 +213,12 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 .header-v3 .container-menu-desktop {
-<<<<<<< HEAD
   height: auto;
   /* height: 84px; */
-=======
   height: 0pc;
   padding: 1px;
   
->>>>>>> a0160971ad3349c8e9cfe85bfce350e0b0d283b8
+
 }
 
 .header-v4 .container-menu-desktop {

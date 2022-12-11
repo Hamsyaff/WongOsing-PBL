@@ -1,12 +1,11 @@
 <?php
 
-<<<<<<< HEAD
-use App\Http\Controllers\backend\CheckoutController;
-use App\Http\Controllers\backend\HomeController;
-=======
+
+
+// use App\Http\Controllers\backend\HomeController;
+
 use App\Http\Controllers\backend\adminController;
 use App\Http\Controllers\backend\CheckoutController;
->>>>>>> a0160971ad3349c8e9cfe85bfce350e0b0d283b8
 use App\Http\Controllers\backend\LogoutController;
 use App\Http\Controllers\backend\ProductController;
 use Illuminate\Support\Facades\Route;
