@@ -9,6 +9,6 @@ class CheckoutController extends Controller
 {
     public function CheckoutView()
     {
-        return view('admin.backend.checkout');
+        return view('user.backend.checkout');
     }
 }

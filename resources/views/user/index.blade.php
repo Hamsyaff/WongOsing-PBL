@@ -1,5 +1,5 @@
-  @extends('admin.admin_master')
-  @section('admin')
+  @extends('user.user_master')
+  @section('user')
   <!-- Cart -->
   <div class="wrap-header-cart js-panel-cart">
       <div class="s-full js-hide-cart"></div>
@@ -91,18 +91,18 @@
   <section class="section-slide">
       <div class="wrap-slick1 rs2-slick1">
           <div class="slick1">
-              <div class="item-slick1 bg-overlay1" style="background-image: url(backend/images/slide-05.jpg);" data-thumb="{{ asset('backend/images/thumb-01.jpg') }}" data-caption="Women’s Wear">
+              <div class="item-slick1 bg-overlay1" style="background-image: url(backend/images/slide-05.jpg);" data-thumb="{{ asset('backend/images/slide-05.jpg') }}" data-caption="">
                   <div class="container h-full">
                       <div class="flex-col-c-m h-full p-t-100 p-b-60 respon5">
                           <div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
                               <span class="ltext-202 txt-center cl0 respon2">
-                                  Women Collection 2018
+                                  Pusat Oleh-Oleh
                               </span>
                           </div>
 
                           <div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
                               <h2 class="ltext-104 txt-center cl0 p-t-22 p-b-40 respon1">
-                                  New arrivals
+                                  WONG OSING
                               </h2>
                           </div>
 
@@ -115,12 +115,12 @@
                   </div>
               </div>
 
-              <div class="item-slick1 bg-overlay1" style="background-image: url(backend/images/slide-06.jpg);" data-thumb="{{ asset('backend/images/thumb-02.jpg') }}" data-caption="Men’s Wear">
+              <div class="item-slick1 bg-overlay1" style="background-image: url(backend/images/slide-06.jpg);" data-thumb="{{ asset('backend/images/slide-06.jpg') }}" data-caption="">
                   <div class="container h-full">
                       <div class="flex-col-c-m h-full p-t-100 p-b-60 respon5">
                           <div class="layer-slick1 animated visible-false" data-appear="rollIn" data-delay="0">
                               <span class="ltext-202 txt-center cl0 respon2">
-                                  Men New-Season
+                                  Men New-S
                               </span>
                           </div>
 
@@ -139,7 +139,7 @@
                   </div>
               </div>
 
-              <div class="item-slick1 bg-overlay1" style="background-image: url(backend/images/slide-07.jpg);" data-thumb="{{ asset('backend/images/thumb-03.jpg') }}" data-caption="Men’s Wear">
+              <div class="item-slick1 bg-overlay1" style="background-image: url(backend/images/slide-07.jpg);" data-thumb="{{ asset('backend/images/slide-07.jpg') }}" data-caption="">
                   <div class="container h-full">
                       <div class="flex-col-c-m h-full p-t-100 p-b-60 respon5">
                           <div class="layer-slick1 animated visible-false" data-appear="rotateInDownLeft" data-delay="0">

@@ -1,5 +1,5 @@
-@extends('admin.admin_master')
-@section('admin')
+@extends('user.user_master')
+@section('user')
 <!-- Content page -->
 <section class="bg0 p-t-104 p-b-116">
     <div class="container">

@@ -5,15 +5,15 @@ namespace App\Http\Controllers\backend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class adminController extends Controller
+class userController extends Controller
 {
     public function AboutView()
     {
-        return view('admin.backend.about');
+        return view('user.backend.about');
     }
 
     public function ContactView()
     {
-        return view('admin.backend.contact');
+        return view('user.backend.contact');
     }
 }

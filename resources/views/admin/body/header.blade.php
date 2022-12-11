@@ -1,212 +1,128 @@
-<!-- Header -->
-<header class="header-v4">
-    <!-- Header desktop -->
-    <div class="container-menu-desktop">
-        <!-- Topbar -->
-        <div class="top-bar">
-            <div class="content-topbar flex-sb-m h-full container">
-                <div class="left-top-bar">
-                    Free shipping for standard order over $100
-                </div>
-
-                <div class="right-top-bar flex-w h-full">
-                    <a href="{{route('contact.view')}}" class="flex-c-m trans-04 p-lr-25">
-                        Help & FAQs
+<header class="main-header">
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top pl-30">
+        <!-- Sidebar toggle button-->
+        <div>
+            <ul class="nav">
+                <li class="btn-group nav-item">
+                    <a href="#" class="waves-effect waves-light nav-link rounded svg-bt-icon" data-toggle="push-menu" role="button">
+                        <i class="nav-link-icon mdi mdi-menu"></i>
                     </a>
-
-                    <a href="{{route('about.view')}}" class="flex-c-m trans-04 p-lr-25">
-                        My Account
+                </li>
+                <li class="btn-group nav-item">
+                    <a href="#" data-provide="fullscreen" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="Full Screen">
+                        <i class="nav-link-icon mdi mdi-crop-free"></i>
                     </a>
-
-                    <a href="https://www.google.com/search?q=terjemahan&rlz=1C1ONGR_enID1023ID1023&oq=terj&aqs=chrome.0.69i59i131i433i512j69i59j0i131i433i512j0i512j0i131i433i512l3j0i433i512j0i131i433i512j0i433i512.2357j0j9&sourceid=chrome&ie=UTF-8" class="flex-c-m trans-04 p-lr-25">
-                        EN
+                </li>
+                <li class="btn-group nav-item d-none d-xl-inline-block">
+                    <a href="#" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">
+                        <i class="ti-check-box"></i>
                     </a>
-
-                    <a href="#" class="flex-c-m trans-04 p-lr-25">
-                        IND
+                </li>
+                <li class="btn-group nav-item d-none d-xl-inline-block">
+                    <a href="calendar.html" class="waves-effect waves-light nav-link rounded svg-bt-icon" title="">
+                        <i class="ti-calendar"></i>
                     </a>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
 
-        <div class="wrap-menu-desktop how-shadow1">
-            <nav class="limiter-menu-desktop container"> 
-                
-                <!-- Logo desktop -->		
-                <a href="#" class="logo">
-                    <img src="{{ asset('backend/images/logo-wo.png') }}" alt="IMG-LOGO">
-                </a>
+        <div class="navbar-custom-menu r-side">
+            <ul class="nav navbar-nav">
+                <!-- full Screen -->
+                <li class="search-bar">
+                    <div class="lookup lookup-circle lookup-right">
+                        <input type="text" name="s">
+                    </div>
+                </li>
+                <!-- Notifications -->
+                <li class="dropdown notifications-menu">
+                    <a href="#" class="waves-effect waves-light rounded dropdown-toggle" data-toggle="dropdown" title="Notifications">
+                        <i class="ti-bell"></i>
+                    </a>
+                    <ul class="dropdown-menu animated bounceIn">
 
-                <!-- Menu desktop -->
-                <div class="menu-desktop">
-                    <ul class="main-menu">
-                        <li>
-                            <a href="dashboard">Home</a>
+                        <li class="header">
+                            <div class="p-20">
+                                <div class="flexbox">
+                                    <div>
+                                        <h4 class="mb-0 mt-0">Notifications</h4>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="text-danger">Clear All</a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
 
                         <li>
-                            <a href="{{route('product.view')}}">Shop</a>
+                            <!-- inner menu: contains the actual data -->
+                            <ul class="menu sm-scrol">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-users text-info"></i> Curabitur id eros quis nunc suscipit blandit.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-warning text-warning"></i> Duis malesuada justo eu sapien elementum, in semper diam posuere.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-users text-danger"></i> Donec at nisi sit amet tortor commodo porttitor pretium a erat.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-shopping-cart text-success"></i> In gravida mauris et nisi
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-user text-danger"></i> Praesent eu lacus in libero dictum fermentum.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-user text-primary"></i> Nunc fringilla lorem
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-user text-success"></i> Nullam euismod dolor ut quam interdum, at scelerisque ipsum imperdiet.
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
-
-                        <li class="label1" data-label1="hot">
-                            <a href="{{route('checkout.view')}}">Features</a>
-                        </li>
-                        <li>
-                            <a href="{{route('about.view')}}">About</a>
-                        </li>
-
-                        <li>
-                            <a href="{{route('contact.view')}}">Contact</a>
+                        <li class="footer">
+                            <a href="#">View all</a>
                         </li>
                     </ul>
-                </div>	
+                </li>
 
-                <!-- Icon header -->
-                <div class="wrap-icon-header flex-w flex-r-m">
-                    <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
-                        <i class="zmdi zmdi-search"></i>
-                    </div>
+                <!-- User Account-->
+                <li class="dropdown user user-menu">
+                    <a href="#" class="waves-effect waves-light rounded dropdown-toggle p-0" data-toggle="dropdown" title="User">
+                        <img src="../images/avatar/1.jpg" alt="">
+                    </a>
+                    <ul class="dropdown-menu animated flipInX">
+                        <li class="user-body">
+                            <a class="dropdown-item" href="#"><i class="ti-user text-muted mr-2"></i> Profile</a>
+                            <a class="dropdown-item" href="#"><i class="ti-wallet text-muted mr-2"></i> My Wallet</a>
+                            <a class="dropdown-item" href="#"><i class="ti-settings text-muted mr-2"></i> Settings</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><i class="ti-lock text-muted mr-2"></i> Logout</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-toggle="control-sidebar" title="Setting" class="waves-effect waves-light">
+                        <i class="ti-settings"></i>
+                    </a>
+                </li>
 
-                    <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart" data-notify="2">
-                        <i class="zmdi zmdi-shopping-cart"></i>
-                    </div>
-                                       
-                    <!-- Cart -->
-                    <div class="wrap-header-cart js-panel-cart">
-                        <div class="s-full js-hide-cart"></div>
-
-                        <div class="header-cart flex-col-l p-l-65 p-r-25">
-                            <div class="header-cart-title flex-w flex-sb-m p-b-8">
-                                <span class="mtext-103 cl2">
-                                    Your Cart
-                                </span>
-
-                                <div class="fs-35 lh-10 cl2 p-lr-5 pointer hov-cl1 trans-04 js-hide-cart">
-                                    <i class="zmdi zmdi-close"></i>
-                                </div>
-                            </div>
-
-                            <div class="header-cart-content flex-w js-pscroll">
-                                <ul class="header-cart-wrapitem w-full">
-                                    <li class="header-cart-item flex-w flex-t m-b-12">
-                                        <div class="header-cart-item-img">
-                                            <img src="{{asset ('backend/images/item-cart-01.jpg') }}" alt="IMG">
-                                        </div>
-
-                                        <div class="header-cart-item-txt p-t-8">
-                                            <a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-                                                White Shirt Pleat
-                                            </a>
-
-                                            <span class="header-cart-item-info">
-                                                1 x $19.00
-                                            </span>
-                                        </div>
-                                    </li>
-
-                                    <li class="header-cart-item flex-w flex-t m-b-12">
-                                        <div class="header-cart-item-img">
-                                            <img src="{{ asset('backend/images/item-cart-02.jpg') }}" alt="IMG">
-                                        </div>
-
-                                        <div class="header-cart-item-txt p-t-8">
-                                            <a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-                                                Converse All Star
-                                            </a>
-
-                                            <span class="header-cart-item-info">
-                                                1 x $39.00
-                                            </span>
-                                        </div>
-                                    </li>
-
-                                    <li class="header-cart-item flex-w flex-t m-b-12">
-                                        <div class="header-cart-item-img">
-                                            <img src="{{ asset('backend/images/item-cart-03.jpg') }}" alt="IMG">
-                                        </div>
-
-                                        <div class="header-cart-item-txt p-t-8">
-                                            <a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-                                                Nixon Porter Leather
-                                            </a>
-
-                                            <span class="header-cart-item-info">
-                                                1 x $17.00
-                                            </span>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <div class="w-full">
-                                    <div class="header-cart-total w-full p-tb-40">
-                                        Total: $75.00
-                                    </div>
-
-                                    <div class="header-cart-buttons flex-w w-full">
-                                        <a href="shoping-cart.html" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">
-                                            View Cart
-                                        </a>
-
-                                        <a href="{{route('checkout.view')}}" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
-                                            Check Out
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                <!-- Button show menu -->
-                <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </div>
-                </div>
-            </nav>
-        </div>	
-    </div>
-
-    <!-- Header Mobile -->
-    <div class="wrap-header-mobile">
-        <!-- Logo moblie -->		
-        <div class="logo-mobile">
-            <a href="index.html"><img src="images/icons/logo-01.png" alt="IMG-LOGO"></a>
+            </ul>
         </div>
-
-        <!-- Icon header -->
-        <div class="wrap-icon-header flex-w flex-r-m m-r-15">
-            <div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 js-show-modal-search">
-                <i class="zmdi zmdi-search"></i>
-            </div>
-           <!-- Button show menu -->
-            <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </div>
-        </div>
-
-        <!-- Button show menu -->
-        <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </div>
-    </div>
-    <!-- Modal Search -->
-    <div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
-        <div class="container-search-header">
-            <button class="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search">
-                <img src="images/icons/icon-close2.png" alt="CLOSE">
-            </button>
-
-            <form class="wrap-search-header flex-w p-l-15">
-                <button class="flex-c-m trans-04">
-                    <i class="zmdi zmdi-search"></i>
-                </button>
-                <input class="plh3" type="text" name="search" placeholder="Search...">
-            </form>
-        </div>
-    </div>
+    </nav>
 </header>

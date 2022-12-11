@@ -39,13 +39,13 @@
 
 <body class="animsition">
 
-    @include('admin.body.header')
+    @include('user.body.header')
 
-    @include('admin.body.sidebar')
+    @include('user.body.sidebar')
 
-    @yield('admin')
+    @yield('user')
 
-    @include('admin.body.footer')
+    @include('user.body.footer')
 
     <!-- Back to top -->
     <div class="btn-back-to-top" id="myBtn">
@@ -72,7 +72,7 @@
                                 <div class="wrap-slick3-arrows flex-sb-m flex-w"></div>
 
                                 <div class="slick3 gallery-lb">
-                                    <div class="item-slick3" data-thumb="backend/images/product-detail-01.jpg"> 
+                                    <div class="item-slick3" data-thumb="backend/images/product-detail-01.jpg">
                                         <div class="wrap-pic-w pos-relative">
                                             <img src="{{asset('backend/images/product-detail-01.jpg')}}" alt="IMG-PRODUCT">
 
@@ -83,24 +83,24 @@
                                     </div>
 
                                     <div class="item-slick3" data-thumb="backend/images/product-detail-02.jpg">
-                                            <img src="{{asset('backend/images/product-detail-02.jpg')}}" alt="IMG-PRODUCT">
+                                        <img src="{{asset('backend/images/product-detail-02.jpg')}}" alt="IMG-PRODUCT">
 
-                                            <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="{{asset('backend/images/product-detail-02.jpg')}}">
-                                                <i class="fa fa-expand"></i>
-                                            </a>
-                                        </div>
+                                        <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="{{asset('backend/images/product-detail-02.jpg')}}">
+                                            <i class="fa fa-expand"></i>
+                                        </a>
                                     </div>
+                                </div>
 
-                                    <div class="item-slick3" data-thumb="backend/images/product-detail-03.jpg">
-                                        <div class="wrap-pic-w pos-relative">
-                                            <img src=" {{asset('backend/images/product-detail-03.jpg')}}" alt="IMG-PRODUCT">
-
-                                            <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="{{asset('backend/images/product-detail-03.jpg')}}">
-                                                <i class="fa fa-expand"></i>
-                                            </a>
-                                        </div>
-                                    </div>
+                                <div class="item-slick3" data-thumb="backend/images/product-detail-03.jpg">
                                     <div class="wrap-pic-w pos-relative">
+                                        <img src=" {{asset('backend/images/product-detail-03.jpg')}}" alt="IMG-PRODUCT">
+
+                                        <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="{{asset('backend/images/product-detail-03.jpg')}}">
+                                            <i class="fa fa-expand"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="wrap-pic-w pos-relative">
                                 </div>
                             </div>
                         </div>
@@ -175,7 +175,7 @@
                                         </div>
 
                                         <button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail">
-                                            Add to Card 
+                                            Add to Card
                                         </button>
                                     </div>
                                 </div>
