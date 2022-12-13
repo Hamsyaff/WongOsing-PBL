@@ -109,32 +109,32 @@
                     <div class="col-md-6 col-lg-5 p-b-30">
                         <div class="p-r-50 p-t-5 p-lr-0-lg">
                             <h4 class="mtext-105 cl2 js-name-detail p-b-14">
-                                Lightweight Jacket
+                                Jamu Sirup Secang
                             </h4>
 
                             <span class="mtext-106 cl2">
-                                $58.79
+                                Rp.30.000
                             </span>
 
                             <p class="stext-102 cl3 p-t-23">
-                                Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                minuman jamu sehat dengan bahan alami yang diproduksi sendiri
                             </p>
 
                             <!--  -->
                             <div class="p-t-33">
                                 <div class="flex-w flex-r-m p-b-10">
                                     <div class="size-203 flex-c-m respon6">
-                                        Size
+                                        Ukuran
                                     </div>
 
                                     <div class="size-204 respon6-next">
                                         <div class="rs1-select2 bor8 bg0">
                                             <select class="js-select2" name="time">
                                                 <option>Choose an option</option>
-                                                <option>Size S</option>
-                                                <option>Size M</option>
-                                                <option>Size L</option>
-                                                <option>Size XL</option>
+                                                <option>0,5 liter</option>
+                                                <option>1 liter</option>
+                                                <option>1,5 liter</option>
+                                                <option>2 liter</option>
                                             </select>
                                             <div class="dropDownSelect2"></div>
                                         </div>
@@ -143,17 +143,16 @@
 
                                 <div class="flex-w flex-r-m p-b-10">
                                     <div class="size-203 flex-c-m respon6">
-                                        Color
+                                        Rasa
                                     </div>
 
                                     <div class="size-204 respon6-next">
                                         <div class="rs1-select2 bor8 bg0">
                                             <select class="js-select2" name="time">
                                                 <option>Choose an option</option>
-                                                <option>Red</option>
-                                                <option>Blue</option>
-                                                <option>White</option>
-                                                <option>Grey</option>
+                                                <option>original</option>
+                                                <option>Jahe</option>
+                                                <option>Madu</option>
                                             </select>
                                             <div class="dropDownSelect2"></div>
                                         </div>
@@ -175,7 +174,7 @@
                                         </div>
 
                                         <button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail">
-                                            Add to Card 
+                                            Tambahkan keranjang 
                                         </button>
                                     </div>
                                 </div>

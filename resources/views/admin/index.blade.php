@@ -70,12 +70,6 @@
                   <div class="header-cart-total w-full p-tb-40">
                       Total: $75.00
                   </div>
-
-                  <div class="header-cart-buttons flex-w w-full">
-                      <a href="shoping-cart.html" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">
-                          View Cart
-                      </a>
-
                       <a href="{{route('checkout.view')}}" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
                           Check Out
                       </a>
@@ -553,14 +547,14 @@
                           <img src="{{ asset('backend/images/WO/kaos-01.jpeg') }}" alt="IMG-PRODUCT">
 
                           <a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-                              Quick View
+                              Detail
                           </a>
                       </div>
 
                       <div class="block2-txt flex-w flex-t p-t-14">
                           <div class="block2-txt-child1 flex-col-l ">
                               <a href="product-detail.html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-                                  Esprit Ruffle Shirt
+                                  Kaos Khas Banyuwangi
                               </a>
 
                               <span class="stext-105 cl3">
@@ -649,7 +643,7 @@
                           <img src="{{ asset('backend/images/WO/kaos-04.jpeg') }}" alt="IMG-PRODUCT">
 
                           <a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-                              Quick View
+                              Details
                           </a>
                       </div>
 

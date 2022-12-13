@@ -122,8 +122,8 @@
                                 <div class="rs1-select2 rs2-select2 bor8 bg0 m-b-12 m-t-9">
                                     <select class="js-select2" name="time">
                                         <option>Select a country...</option>
-                                        <option>USA</option>
-                                        <option>UK</option>
+                                        <option>Indonesia</option>
+                                        <option>Muncar</option>
                                     </select>
                                     <div class="dropDownSelect2"></div>
                                 </div>
@@ -155,7 +155,7 @@
 
                         <div class="size-209 p-t-1">
                             <span class="mtext-110 cl2">
-                                $79.65
+                                Rp.
                             </span>
                         </div>
                     </div>
