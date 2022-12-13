@@ -55,7 +55,8 @@ class penjualanController extends Controller
         ]);
 
         // update user
-        $penjualan = Penjualan::where('id', '=', $request->id)->first()([
+        $penjualan = Penjualan::where('id', '=', $request->id)->first();
+        ([
             'id' =>  $request->id,
             'id_penjual' =>  $request->id_penjual,
             'id_produk' =>  $request->id_produk,
