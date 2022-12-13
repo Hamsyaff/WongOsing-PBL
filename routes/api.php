@@ -29,9 +29,15 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('login', [AuthController::class, 'login']);
 
-//penjualan
-Route::get('penjualan', [penjualanController::class, 'index']);
-Route::post('penjualan/add', [penjualanController::class, 'add']);
+
+Route::group(['prefix' => 'penjuals'], function () {
+    Route::group(['middleware' => 'auth:api'], function () {
+        Route::get('penjualan', [penjualanController::class, 'index']);
+        Route::post('penjualan/add', [penjualanController::class, 'add']);
+        Route::post('penjualan/update', [penjualanController::class, 'update']);
+        Route::post('penjualan/delete', [penjualanController::class, 'delete']);
+    });
+});
 
 //pembelian
 Route::get('/pembelian', [pembelianController::class, 'index']);
@@ -51,17 +57,17 @@ Route::post('produk/add', [produkController::class, 'add']);
 
 //API
 Route::post('register', [AuthController::class, 'register']);
-Route::post('login',[AuthController::class, 'login']);
+Route::post('login', [AuthController::class, 'login']);
 
 //CRUD
-Route::get('kategori',[kategoriController::class, 'index']);
-Route::post('kategori/add',[kategoriController::class, 'add']);
+Route::get('kategori', [kategoriController::class, 'index']);
+Route::post('kategori/add', [kategoriController::class, 'add']);
 
-Route::get('produk',[produkController::class, 'index']);
-Route::post('produk/add',[produkController::class, 'add']);
+Route::get('produk', [produkController::class, 'index']);
+Route::post('produk/add', [produkController::class, 'add']);
 
 //Transaksi Pembelian
-Route::get('pembelian',[pembelianController::class, 'index']);
-Route::post('pembelian/add',[pembelianController::class, 'add']);
-Route::post('pembelian/update',[pembelianController::class, 'update']);
-Route::post('pembelian/destroy',[pembelianController::class, 'destroy']);
+Route::get('pembelian', [pembelianController::class, 'index']);
+Route::post('pembelian/add', [pembelianController::class, 'add']);
+Route::post('pembelian/update', [pembelianController::class, 'update']);
+Route::post('pembelian/destroy', [pembelianController::class, 'destroy']);

@@ -17,6 +17,7 @@ class penjualanController extends Controller
     public function add(Request $request)
     {
         $validateData = $request->validate([
+            'id' => 'required',
             'id_penjual' => 'required',
             'id_produk' => 'required',
             'no_transaksi' => 'required',
@@ -27,6 +28,7 @@ class penjualanController extends Controller
 
         // create user
         $penjualan = new Penjualan([
+            'id' =>  $request->id,
             'id_penjual' =>  $request->id_penjual,
             'id_produk' =>  $request->id_produk,
             'no_transaksi' =>  $request->no_transaksi,
@@ -38,5 +40,48 @@ class penjualanController extends Controller
         $penjualan->save();
 
         return response()->json($penjualan, 201);
+    }
+
+    public function update(Request $request)
+    {
+        $validateData = $request->validate([
+            'id' => 'required',
+            'id_penjual' => 'required',
+            'id_produk' => 'required',
+            'no_transaksi' => 'required',
+            'tgl_transaksi' => 'required',
+            'banyak_transaksi' => 'required',
+            'harga_jual_produk' => 'required',
+        ]);
+
+        // update user
+        $penjualan = Penjualan::where('id', '=', $request->id)->first()([
+            'id' =>  $request->id,
+            'id_penjual' =>  $request->id_penjual,
+            'id_produk' =>  $request->id_produk,
+            'no_transaksi' =>  $request->no_transaksi,
+            'tgl_transaksi' =>  $request->tgl_transaksi,
+            'banyak_transaksi' =>  $request->banyak_transaksi,
+            'harga_jual_produk' =>  $request->harga_jual_produk,
+        ]);
+
+        $penjualan->save();
+
+        return response()->json($penjualan, 201);
+    }
+
+    public function delete(Request $request)
+    {
+        $penjualan = Penjualan::where('id', '=', $request->id)->first();
+
+        if (!empty($penjualan)) {
+            $penjualan->delete();
+
+            return response()->json($penjualan, 200);
+        } else {
+            return response()->json([
+                'error' => 'data tidak ditemukan'
+            ], 404);
+        }
     }
 }
