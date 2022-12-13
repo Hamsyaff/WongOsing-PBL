@@ -27,16 +27,14 @@ class penjualanController extends Controller
         ]);
 
         // create user
-        $penjualan = new Penjualan([
-            'id' =>  $request->id,
-            'id_penjual' =>  $request->id_penjual,
-            'id_produk' =>  $request->id_produk,
-            'no_transaksi' =>  $request->no_transaksi,
-            'tgl_transaksi' =>  $request->tgl_transaksi,
-            'banyak_transaksi' =>  $request->banyak_transaksi,
-            'harga_jual_produk' =>  $request->harga_jual_produk,
-        ]);
-
+        $penjualan = new Penjualan;
+        $penjualan->id = $request->id;
+        $penjualan->id_penjual = $request->id_penjual;
+        $penjualan->id_produk = $request->id_produk;
+        $penjualan->no_transaksi = $request->no_transaksi;
+        $penjualan->tgl_transaksi = $request->tgl_transaksi;
+        $penjualan->banyak_transaksi = $request->banyak_transaksi;
+        $penjualan->harga_jual_produk = $request->harga_jual_produk;
         $penjualan->save();
 
         return response()->json($penjualan, 201);
@@ -56,16 +54,13 @@ class penjualanController extends Controller
 
         // update user
         $penjualan = Penjualan::where('id', '=', $request->id)->first();
-        ([
-            'id' =>  $request->id,
-            'id_penjual' =>  $request->id_penjual,
-            'id_produk' =>  $request->id_produk,
-            'no_transaksi' =>  $request->no_transaksi,
-            'tgl_transaksi' =>  $request->tgl_transaksi,
-            'banyak_transaksi' =>  $request->banyak_transaksi,
-            'harga_jual_produk' =>  $request->harga_jual_produk,
-        ]);
-
+        $penjualan->id = $request->id;
+        $penjualan->id_penjual = $request->id_penjual;
+        $penjualan->id_produk = $request->id_produk;
+        $penjualan->no_transaksi = $request->no_transaksi;
+        $penjualan->tgl_transaksi = $request->tgl_transaksi;
+        $penjualan->banyak_transaksi = $request->banyak_transaksi;
+        $penjualan->harga_jual_produk = $request->harga_jual_produk;
         $penjualan->save();
 
         return response()->json($penjualan, 201);
