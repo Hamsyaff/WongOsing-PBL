@@ -1,71 +1,59 @@
-@extends('_layouts.app')
+<!DOCTYPE html>
+<html lang="en">
 
-@section('content')
-    <section class="my-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 offset-md-4">
-                    <div class="card bg-light border-primary" style="border-radius: 20px">
-                        <div class="card-body">
-                            <div class="text-center mb-4">
-                                <img src="{{ asset('assets/image/logo.png') }}" class="img-fluid mb-2" width="100">
-                                <h4 class="text-center">Login Member</h4>
-                            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
 
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="{{asset('log/fonts/material-icon/css/material-design-iconic-font.min.css')}}">
 
-                            {{-- Alert ketika success dan error --}}
-                            @if (Session::has('success'))
-                                <div class="alert alert-success">
-                                    {{ Session::get('success') }}
-                                    @php
-                                        Session::forget('success');
-                                    @endphp
-                                </div>
-                            @endif
-                            @if (Session::has('error'))
-                                <div class="alert alert-warning">
-                                    {{ Session::get('error') }}
-                                    @php
-                                        Session::forget('error');
-                                    @endphp
-                                </div>
-                            @endif
+    <!-- Main css -->
+    <link rel="stylesheet" href="{{asset('log/css/style.css')}}">
+</head>
 
-                              <!-- Menampilkan Error form validation -->
-                              @if ($errors->any())
-                              <div class="alert alert-danger">
-                                  <b>Terjadi kesalahan pada proses input data</b> <br>
-                                  <ul>
-                                      @foreach ($errors->all() as $error)
-                                          <li>{{ $error }}</li>
-                                      @endforeach
-                                  </ul>
-                              </div>
-                          @endif
+<body>
 
-                            <form  action="{{url("user/process-login") }}" method="POST">
-                                @csrf
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="password" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="password" name="password">
-                                </div>
-                                <div class="d-grid gap-2 mt-4">
-                                    <button type="submit" class="btn btn-primary btn-lg" type="button">Login</button>
-                                </div>
-
-                                <div class="d-grid gap-2 mt-4 mb-1">
-                                    <p class="mb-0">Sudah punya akun?</p>
-                                    <a href="{{url("user/register") }}"" class="btn btn-outline-primary">Daftar Member</a>
-                                </div>
-                            </form>
+    <div class="main">
+        <!-- Sing in  Form -->
+        <section class="sign-in">
+            <div class="container">
+                <div class="signin-content">
+                    <div class="signin-image">
+                        <figure><img src=" {{asset('backend/images/LogoWO.png')}}" alt="sing up image"></figure>
+                        <div class="text-center">
+                            <p class="mt-15 mb-0 text-black">Belum punya akun? <a href="{{route("register")}}" class="text-info center-ml-5">Register</a></p>
                         </div>
+                    </div>
+
+                    <div class="signin-form">
+                        <h2 class="form-title">Log In</h2>
+                        <form method="POST" action="{{route('login') }}" class="register-form" id="login-form">
+                            @csrf
+                            <div class="form-group">
+                                <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="email" id="email" name="email" class="form-control pl-15 bg-transparent text-white plc-white" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" id="password" name="password" class="form-control pl-15 bg-transparent text-white plc-white" placeholder="Password">
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" />
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-@endsection
+        </section>
+
+    </div>
+
+    <!-- JS -->
+    <script src="{{asset('log/vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('log/js/main.js')}}"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
