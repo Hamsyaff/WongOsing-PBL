@@ -9,6 +9,7 @@ use App\Http\Controllers\backend\CheckoutController;
 use App\Http\Controllers\backend\DashboardController;
 use App\Http\Controllers\backend\LogoutController;
 use App\Http\Controllers\backend\ProductController;
+use App\Http\Controllers\backend\UsersController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -36,23 +37,28 @@ use Illuminate\Support\Facades\Route;
 //     })->name('dashboard');
 // });
 
+Route::get('/', [UsersController::class, 'checkUserType']);
 
-Route::get('/', [DashboardController::class, 'index']);
+Route::get('/admin/dashboard', function () {
+    return view('admin.admin_master');
+})->name('admin.dashboard');
 
-Route::group(['prefix' => 'user/'], function () {
-    Route::get("register", [UserController::class, "register"]);
-    Route::post("process-register", [UserController::class, "processRegister"]);
-    Route::get("register-success/{id}", [UserController::class, "registerSuccess"]);
+Route::get('/owner/dashboard', function () {
+    return view('owner.owner_master');
+})->name('owner.dashboard');
 
-    // next week
-    Route::get("login", [UserController::class, "login"])->name("login");
-    Route::post("process-login", [UserController::class, "processLogin"]);
+Route::get('/user/home', function () {
+    return view('user.homepage');
+})->name('user.home');
 
-    Route::post("process-logout", [UserController::class, "process-logout"]);
-});
+Route::get('/home', function () {
+    return view('user.index');
+})->name('home');
 
 
-// Route::get('/Logout/logout', [LogoutController::class, 'logout'])->name('user.logout');
+
+
+Route::get('/Logout/logout', [LogoutController::class, 'logout'])->name('admin.logout');
 
 //user
 Route::prefix('users')->group(function () {
